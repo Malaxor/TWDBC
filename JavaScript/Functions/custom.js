@@ -14,7 +14,6 @@ function factorial(num1) {
 
 		result*= i;
 	}
-
 	return result;
 }
 

@@ -29,7 +29,7 @@ for(var y = 300; y <= 333; y++) {
 
 for(var z = 5; z <= 50; z++) {
 
-	if(z % 3 === 0 && z % 3 === 0) {
+	if(z % 3 === 0 && z % 5 === 0) {
 
 		console.log(z);
 	}
