@@ -1,22 +1,22 @@
 
-var question = prompt("What would you like to do?");
+var input = prompt("What would you like to do?");
 var toDoArray = [];
 
-while(question !=="quit") {
+while(input !=="quit") {
 
-	if(question === "new") {
+	if(input === "new") {
 
 		newToDo();
 	}
-	else if(question === "list") {
+	else if(input === "list") {
 
 		listToDos();
 	}
-	else if(question === "delete") {
+	else if(input === "delete") {
 
 		deleteToDo();
 	}
-	question = prompt("What would you like to do?");
+	input = prompt("What would you like to do?");
 };
 
 
@@ -24,7 +24,7 @@ function newToDo() {
 
 	var answer = prompt("Type a new todo item");
 	toDoArray.push(answer);
-	console.log(`${answer} was added to the list`);	
+	console.log(`${answer} has been added to the list`);	
 };
 
 function listToDos() {
@@ -40,7 +40,7 @@ function deleteToDo() {
 
 	var index = prompt("Enter the index of the todo list item?");
 
-	var item = toDoArray.splice(index,1);
+	var item = toDoArray.splice(index, 1);
 	console.log(item + " has been removed from the list");
 };
 

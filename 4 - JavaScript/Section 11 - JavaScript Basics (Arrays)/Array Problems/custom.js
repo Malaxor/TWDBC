@@ -1,12 +1,12 @@
 
-function printReverse(a, b, c) {
+function printReverse(arr) {
 
-	var array = [a, b, c];
-	var reversed = array.reverse();
-	console.log(reversed);
+	for(var i = arr.length -1; i >= 0; i--) {
+
+		console.log(arr[i]);
+	}
 }
 
-printReverse(1, 2, 3);
 
 //======================================================
 
@@ -19,9 +19,11 @@ function isUniform(arr) {
 		if(arr[i] !== first) {
 			return false;
 		}
-		return true;
 	}
+	return true;
 }
+
+//======================================================
 
 function sumArray(arr) {
 
@@ -33,6 +35,8 @@ function sumArray(arr) {
 	});
 	return total;
 }
+
+//======================================================
 
 function max(arr) {
 
